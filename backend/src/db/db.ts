@@ -9,7 +9,7 @@ export const pool = new Pool({
     password: env.DB_PASSWORD,
     database: env.DB_NAME,
 });
-
+ 
 export async function query<T extends QueryResultRow = QueryResultRow>(
     text: string,
     params?: unknown[]
